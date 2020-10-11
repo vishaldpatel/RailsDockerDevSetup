@@ -4,7 +4,7 @@ A very basic Ruby On Rails Development environment using Docker for a new projec
 # Steps to get started
 1. Install Docker on your computer along with Docker Composer
    which is usually included.
-2. clone this repo. cd into the directory.
+2. Clone this repo. cd into the directory.
 3. Build the Docker image:
 ```
 docker build -t rails-dev
