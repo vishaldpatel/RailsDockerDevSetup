@@ -39,3 +39,8 @@ docker exec railsdev rails server
 ```
 docker exec -it railsdev bash
 ```
+
+- To see what's going on in your Rails project after you access console.
+```
+tail -f log/*
+```
