@@ -34,3 +34,8 @@ docker container rm railsdev
 docker exec railsdev rails server
 # It might give you an errer that the server is already running, which is fine. Visit your browser and the previously broken localhost:3000 should be up and running again.
 ```
+
+- To access your Docker via console
+```
+docker exec -it railsdev bash
+```
