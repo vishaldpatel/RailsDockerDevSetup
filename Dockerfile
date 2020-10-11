@@ -14,6 +14,10 @@ RUN apk add ruby ruby-dev ruby-bundler ruby-nokogiri
 RUN gem install rails
 RUN apk add sqlite sqlite-dev
 
+# Git stuff
+RUN apk add git
+RUN apk add openssh
+
 # Cleanup
 RUN rm -rf /var/cache/apk/*
 
