@@ -13,15 +13,19 @@ docker build -t rails-dev
 ```
 docker run --name railsdev -p 3000:3000 -it rails-dev rails server -b 0.0.0.0
 ```
-5. To stop the container:
+5. You should now be able to visit localhost:3000 in your browser to see your brand new Rails page!
+
+
+# Helpful Docker commands
+- To stop the container:
 ```
 docker stop railsdev
 ```
-6. To restart the container
+- To restart the container
 ```
 docker start railsdev
 ```
-7. To delete the container: 
+- To delete the container: 
 ```
 docker container rm railsdev
 ```
