@@ -7,7 +7,7 @@ A very basic Ruby On Rails Development environment using Docker for a new projec
 2. Clone this repo. cd into the directory.
 3. Build the Docker image:
 ```
-docker build -t rails-dev
+docker build -t rails-dev .
 ```
 4. Get a container started along with the rails server
 ```
@@ -15,6 +15,12 @@ docker run --name railsdev -p 3000:3000 -it rails-dev rails server -b 0.0.0.0
 ```
 5. You should now be able to visit localhost:3000 in your browser to see your brand new Rails page!
 
+# To get Nginx going:
+```
+cd NginXDocker
+docker build -t nginx-dev .
+docker run --name nginxdev -p 80:80 -it nginx-dev
+```
 
 # Helpful Docker commands
 - To stop the container:
